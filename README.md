@@ -1,8 +1,8 @@
 # memmd-mcp
 
-[![PyPI](https://img.shields.io/pypi/v/memmd-mcp)](https://pypi.org/project/memmd-mcp/)
-[![License](https://img.shields.io/pypi/l/memmd-mcp)](https://pypi.org/project/memmd-mcp/)
-[![Python](https://img.shields.io/pypi/pyversions/memmd-mcp)](https://pypi.org/project/memmd-mcp/)
+[![PyPI](https://img.shields.io/pypi/v/memmd_mcp)](https://pypi.org/project/memmd-mcp/)
+[![License](https://img.shields.io/pypi/l/memmd_mcp)](https://pypi.org/project/memmd-mcp/)
+[![Python](https://img.shields.io/pypi/pyversions/memmd_mcp)](https://pypi.org/project/memmd-mcp/)
 
 A memory layer for AI agents — local `memory.md` with automatic deduplication, contradiction resolution, and stale cleanup.
 
