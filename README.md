@@ -1,5 +1,7 @@
 # memmd-mcp
 
+[English](README.md) | [한국어](docs/README.ko.md)
+
 [![PyPI](https://img.shields.io/pypi/v/memmd_mcp)](https://pypi.org/project/memmd-mcp/)
 [![License](https://img.shields.io/pypi/l/memmd_mcp)](https://pypi.org/project/memmd-mcp/)
 [![Python](https://img.shields.io/pypi/pyversions/memmd_mcp)](https://pypi.org/project/memmd-mcp/)
@@ -113,7 +115,3 @@ Memory content
 ## License
 
 MIT
-
----
-
-Language docs: [한국어](docs/README.ko.md)
