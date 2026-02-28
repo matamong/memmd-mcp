@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "memmd-mcp"
+version = "0.1.0"
+description = "MCP stdio server that manages local memory.md with dedupe/merge/cleanup."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "memmd contributors" }]
+keywords = ["mcp", "memory", "markdown", "stdio", "agent"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+  "mcp>=1.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/matamong/memmd-mcp"
+Repository = "https://github.com/matamong/memmd-mcp"
+Issues = "https://github.com/matamong/memmd-mcp/issues"
+
+[project.scripts]
+memmd-mcp = "memmd_mcp.server:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.2.0",
+  "ruff>=0.12.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/memmd_mcp"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
