@@ -8,11 +8,11 @@
   <img src="assets/memmd-mcp.webp" alt="memmd-mcp" width="600">
 </p>
 
-A shared memory layer for AI agents — one `memory.md` synced across Claude Desktop, Cursor, Claude Code, and any MCP client. Auto-deduplication, contradiction resolution, and stale cleanup included.
+A shared memory layer for AI agents — one `memory.md` synced across Claude Desktop, Cursor, Claude Code, OpenAI Codex, and any MCP client. Auto-deduplication, contradiction resolution, and stale cleanup included.
 
 > [!TIP]
 > **Why memmd?**
-> - **One memory, every client** — Claude Desktop, Cursor, Claude Code share the same `memory.md`
+> - **One memory, every client** — Claude Desktop, Cursor, Claude Code, OpenAI Codex share the same `memory.md`
 > - Zero external dependencies beyond `mcp` — no embeddings, no API keys, fully offline
 > - Deterministic, rule-based — no LLM calls for memory management
 > - Human-readable `memory.md` — inspect and edit anytime
@@ -54,7 +54,8 @@ uvx memmd-mcp
 > Config location by client:
 > - **Claude Desktop** — `~/Library/Application Support/Claude/claude_desktop_config.json`
 > - **Claude Code** — `.claude/settings.json` or user settings
-> - **Cursor** — Cursor MCP settings
+> - **Cursor** — `~/.cursor/mcp.json`
+> - **OpenAI Codex** — `~/.codex/config.toml`
 
 ## Tools
 
