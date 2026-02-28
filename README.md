@@ -110,14 +110,6 @@ Memory content
 | `MEMMD_MEMORY_PATH` | `./memory.md` | Path to memory file |
 | `MEMMD_STALE_DAYS` | `120` | Days before stale cleanup (min: 7) |
 
-## Development
-
-```bash
-uv sync
-uv run memmd-mcp          # run locally
-uv build && uv publish    # publish to PyPI
-```
-
 ## License
 
 MIT
